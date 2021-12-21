@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&family=Libre+Franklin:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600&family=Yellowtail&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-col: white;
+    --black-col: black;
+    --p-collor-gr: #a3a2a2;
+    --red-col: #DC3835;
+    --red-col-hov: #da3c49;
+    --gray-col: #625B5B;
+    --col-of-heart: #DC3A47;
+    --shadow-col: #e6e3e3;
+    --black-gray-bg: #282525;
+    --bg-col-brown: #251819;
+    --cards-bg-col-dark: #2F2223;
+}
+
+/* nav-bar */
+
+.nav-bar {
+    height: 7vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--white-col);
+    transition: .3s;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nav-bar .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7vh;
+    color: var(--black-col);
+}
+
+.nav-bar .container .content .logo {
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.nav-bar .container .content .logo .img img {
+    height: 28px;
+}
+
+.nav-bar .container .content .logo .word h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--gray-col);
+}
+
+.nav-bar .container .content .menus {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .container .content .menus li {
+    list-style: none;
+    margin-left: 30px;
+    padding: 15px 0px 10px 10px;
+    position: relative;
+}
+
+.nav-bar .container .content .menus li a:hover {
+    color: var(--red-col);
+}
+
+.nav-bar .container .content .menus li#activate a {
+   color: red;
+}
+
+.nav-bar .container .content .menus li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    transition: .4s;
+    color: var(--black-col);
+}
+
+.nav-bar .container .content .menus li a:hover {
+    color: red;
+    transition: .4s;
+}
+
+/* nav-bar end */
+
+/* get-started */
+.sirt{
+    height: auto;
+    padding: 30px 0;
+}
+
+.get-started {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-started .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 45vh;
+}
+
+.get-started .container .content .left {
+    height: 100%;
+}
+
+.get-started .container .content .left img {
+    width: 100%;
+    height: 100%;
+}
+
+.get-started .container .content .right h1 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--black-col);
+}
+
+.get-started .container .content .right p {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--p-collor-gr);
+    margin-bottom: 40px;
+}
+
+.get-started .container .content .right button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    padding: 16px 44px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--red-col-hov);
+    transition: .4s;
+    font-weight: 600;
+    color: var(--white-col);
+}
+
+.get-started .container .content .right button:hover {
+    background-color: var(--red-col);
+    transition: .4s;
+    cursor: pointer;
+}
+
+/* get-started end */
+
+/* start-giving */
+
+.start-giving {
+    height: 50vh;
+}
+
+.start-giving .cards-container {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.start-giving .cards-container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.start-giving .cards-container .content .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.start-giving .cards-container .content .header > h2 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--black-col);
+}
+
+.start-giving .cards-container .content .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.start-giving .cards-container .content .cards .box .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-giving .cards-container .content .cards .box .top img {
+    height: 53%;
+    width: 53%;
+    transition: .3s;
+}
+
+.start-giving .cards-container .content .cards .box .top:hover img {
+    transform: translateY(-7px);
+    transition: .3s;
+}
+
+.start-giving .cards-container .content .cards .box .bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto !important;
+}
+
+.start-giving .cards-container .content .cards .box .bottom h3 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--black-col);
+}
+
+.start-giving .cards-container .content .cards .box .bottom p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--p-collor-gr);
+}
+
+/* start-giving end */
+
+/* send good wishes */
+
+.send {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.send .container .content .left {
+    width: 80%;
+}
+
+.send .container .content .left h2 {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    color: var(--black-col);
+}
+
+.send .container .content .left p {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    font-weight: 500;
+    color: var(--p-collor-gr);
+    padding-bottom: 35px;
+}
+
+.send .container .content .left a button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: var(--white-col);
+    background-color: var(--red-col);
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+}
+
+.send .container .content .left a button:hover {
+    background-color: var(--red-col-hov);
+    cursor: pointer;
+}
+
+.send .container .content .right {
+    text-align: right;
+}
+
+.send .container .content .right img {
+    height: 80%;
+    width: 80%;
+}
+
+/* send good wishes end */
+
+/* share gifts */
+
+.share {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 30px 0;
+}
+
+.share .share-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.share .share-container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.share .share-container .content .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.share .share-container .content .top h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--black-col);
+}
+
+.share .share-container .content .bottom-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 42px;
+    row-gap: 42px;
+}
+
+.share .share-container .content .bottom-cards .card {
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 36px var(--shadow-col);
+}
+
+.share .share-container .content .bottom-cards .card .padding {
+    padding: 32px 20px;
+    position: relative;
+}
+
+.share .share-container .content .bottom-cards .card .padding .i {
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    color: var(--col-of-heart);
+}
+
+.share .share-container .content .bottom-cards .card .padding .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share .share-container .content .bottom-cards .card .padding .img img {
+    width: auto;
+    height: 130px;
+    transition: .3s;
+}
+
+.share .share-container .content .bottom-cards .card:hover .padding .img img {
+    transform: translateY(-7px);
+    transition: .3s;
+}
+
+.share .share-container .content .bottom-cards .card .padding .cost h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #282525;
+}
+
+.share .share-container .content .bottom-cards .card .padding .cost p {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--p-collor-gr);
+}
+
+/* share gifts end */
+
+/* new gifts */
+
+.gifts {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gifts .gifts-container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.gifts .gifts-container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.gifts .gifts-container .content .top {
+    margin-bottom: 70px;
+}
+
+.gifts .gifts-container .content .top h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--black-col);
+}
+
+.gifts .gifts-container .content .carousel-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    row-gap: 50px;
+}
+
+.gifts .gifts-container .content .carousel-cards .cards {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 36px var(--shadow-col);
+    position: relative;
+}
+
+.gifts .gifts-container .content .carousel-cards .cards .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red-col);
+    border-radius: 15px;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+}
+
+.gifts .gifts-container .content .carousel-cards .cards .img img {
+    width: auto;
+    height: 180px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.gifts .gifts-container .content .carousel-cards .cards .img:hover img {
+    transform: translateY(-7px);
+    transition: .3s;
+}
+
+.gifts .gifts-container .content .carousel-cards .cards .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+.gifts .gifts-container .content .carousel-cards .cards .info h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black-col);
+}
+
+.gifts .gifts-container .content .carousel-cards .cards .info h3 {
+    text-transform: capitalize;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--p-collor-gr);
+}
+
+.gifts .gifts-container .content .carousel-cards .cards .i {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--red-col);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.gifts .gifts-container .content .carousel-cards .cards .i i {
+    padding: 10px;
+    color: var(--white-col);
+}
+
+/* new gifts end */
+
+/* message */
+
+.message {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message .container {
+    background-color: var(--red-col-hov);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.message .container .content {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message .container .content .sides {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message .container .content .sides .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message .container .content .sides .left h1 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white-col);
+}
+
+.message .container .content .sides .left input:nth-child(2) {
+    height: 50px;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    margin: 20px 0;
+}
+
+.message .container .content .sides .left input:nth-child(1) {
+    padding: 18px;
+    width: 200px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--black-gray-bg);
+    color: var(--shadow-col);
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.message .container .content .sides .right {
+    text-align: right;
+}
+
+.message .container .content .sides .right img {
+    width: 80%;
+    height: 80%;
+    transform: rotate(20deg);
+}
+
+/* message end */
+
+/* bottom */
+
+.bottom {
+    height: 30vh;
+}
+
+.bottom .container .content {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom .container .content .grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15vh;
+}
+
+.bottom .container .content .grids li {
+    list-style: none;
+}
+
+.bottom .container .content .grids li img {
+    cursor: pointer;
+}
+
+.bottom .container .content .grids li h3 {
+    cursor: text;
+}
+
+.bottom .container .content .grids .grid li#pd {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    padding-top: 17px;
+}
+
+.bottom .container .content .grids .grid li h1 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--black-col);
+}
+
+.bottom .container .content .grids .grid li a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+}
+
+.bottom .container .content .grids .box li:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.bottom .container .content .grids .box li:first-child img {
+    height: 28px;
+}
+
+.bottom .container .content .grids .box li:first-child h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--gray-col);
+}
+
+.bottom .container .content .grids .box li:nth-child(2) {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    padding-top: 25px;
+    color: rgb(61, 61, 61);
+}
+
+.bottom .container .content .grids .grid #picture img {
+    height: 30px;
+    margin: 5px 0;
+}
+
+/* bottom end */
+
+/* b-img */
+
+.img {
+    position: relative;
+}
+
+.img #f1 {
+    position: absolute;
+    right: 33vh;
+    bottom: 12vh;
+    height: 152px;
+}
+
+.img #f2 {
+    position: absolute;
+    left: 45vh;
+    bottom: 5vh;
+    height: 145px;
+}
+
+/* b-img end */
+
+/* Bedimcode */
+
+.code {
+    height: 10vh;
+}
+
+.code .container .content {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.code .container .content p {
+    color: var(--p-collor-gr);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+/* Bedimcode end */

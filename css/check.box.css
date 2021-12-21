@@ -1,0 +1,142 @@
+.section {
+    height: 100%;
+    transition: .3s;
+}
+
+/* check-box */
+
+label {
+    position: absolute;
+    top: 30px;
+    left: 81%;
+    color: blueviolet;
+    z-index: 2;
+}
+
+label .fixed {
+    position: fixed;
+    z-index: 2;
+}
+
+label .i {
+    position: relative;
+    font-size: 20px;
+    color: var(--black-col);
+}
+
+input:checked + label .i {
+    color: white;
+}
+
+input:checked + label .fixed .i #first {
+    display: block;
+    cursor: pointer;
+}
+
+input:checked + label .fixed .i #second {
+    opacity: 0;
+}
+
+label .i i#first {
+    position: absolute;
+    display: none;
+}
+
+label .i i#second {
+    position: absolute;
+    cursor: pointer;
+}
+
+input.input {
+    display: none;
+}
+
+input:checked + label + .section {
+    background-color: var(--bg-col-brown);
+    transition: .3s;
+}
+
+input:checked + label + .section .nav-bar {
+    background-color: var(--bg-col-brown);
+    transition: .3s;
+}
+
+input:checked + label + .section nav .nav-bar .container .content .logo .word h3 {
+    color: var(--white-col);
+}
+
+input:checked + label + .section nav .nav-bar .container .content .menus li a {
+    color: var(--white-col);
+}
+
+input:checked + label + .section nav .nav-bar .container .content .menus li a:hover {
+    color: var(--red-col);
+}
+
+input:checked + label + .section section .get-started .container .content .right h1 {
+    color: var(--white-col);
+}
+
+input:checked + label + .section section .start-giving .cards-container .content .header h2 {
+    color: white;
+}
+
+input:checked + label + .section section .start-giving .cards-container .content .cards h3 {
+    color: var(--white-col);
+}
+
+input:checked + label + .section section .send .container .content .left h2 {
+    color: white;
+}
+
+input:checked + label + .section section .share .share-container .content .top h2 {
+    color: white;
+}
+
+input:checked + label + .section section .share .share-container .content .bottom-cards .card .padding .cost h2 {
+    color: var(--white-col);
+}
+
+input:checked + label + .section section .share .share-container .content .bottom-cards .card {
+    box-shadow: none;
+    background-color: var(--cards-bg-col-dark);
+}
+
+input:checked + label + .section section .gifts .gifts-container .content .top h1 {
+    color: var(--white-col);
+}
+
+input:checked + label + .section section .gifts .gifts-container .content .carousel-cards .cards .info h1 {
+    color: var(--white-col);
+}
+
+input:checked + label + .section section .gifts .gifts-container .content .carousel-cards .cards {
+    box-shadow: none; 
+    background-color: var(--cards-bg-col-dark);
+}
+
+input:checked + label + .section section .message .container {
+    background-color: var(--cards-bg-col-dark);
+}
+
+input:checked + label + .section section .message .container .content .sides .left input[type="text"] {
+    background-color: var(--bg-col-brown);
+}
+
+input:checked + label + .section section .message .container .content .sides .left input[type="button"] {
+    background-color: var(--red-col);    
+}
+
+input:checked + label + .section section .bottom .container .content .grids .grid li h3 {
+    color: var(--white-col) ;
+}
+
+input:checked + label + .section section .bottom .container .content .grids .grid li h1 {
+    color: var(--white-col);
+}
+
+input:checked + label + .section section .bottom .container .content .grids .grid li p {
+    color: var(--p-collor-gr);
+}
+
+/* check-box end */

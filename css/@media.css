@@ -1,0 +1,239 @@
+@media (max-width:1880px) and (min-width:1650px) {
+    label[for="check"] {
+        position: absolute;
+        left: 85%;
+        top: 23px;
+    }
+}
+
+@media (max-width:1650px) and (min-width:1400px) {
+    label[for="check"] {
+        position: absolute;
+        left: 90%;
+        top: 23px;
+    }
+}
+
+@media (max-width:1400px) and (min-width:1249px) {
+    label[for="check"] {
+        position: absolute;
+        left: 95%;
+        top: 23px;
+    }
+}
+
+@media (max-width:1174px) and (min-width:972px) {
+     .container {
+        width: 95%;
+        max-width: 965px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:971px) and (min-width:302px) {
+    .container {
+       width: 95%;
+       max-width: 965px;
+       margin: 0 auto;
+   }
+}
+
+@media (max-width:972px) and (min-width:850px) {
+    x .container {
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:850px) and (min-width:0px) {
+    label[for="check"] {
+        position: absolute;
+        top: 23px;
+        left: 100%;
+    }
+}
+
+@media (max-width:850px) and (min-width:100px) {
+    .nav-bar .container .content .menus {
+        display: none;
+    }
+
+    .nav-bar .container .content .second-menu {
+        display: block;
+    }
+
+    .nav-bar .container .content .second-menu .drop {
+        list-style: none;
+        font-size: 30px;
+        color: black;
+    }
+}
+
+@media (max-width:997px) and (min-width:100px) {
+    .get-started .container .content .right h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:856px) and (min-width:100px) {
+    .get-started .container .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .get-started {
+        height:100vh;
+        padding: 30px 0;
+    }
+
+    .get-started .container .content .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width:834px) and (min-width:700px) {
+    .container {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    label[for="check"] {
+        position: absolute;
+        top: 23px;
+        left: 84%;
+    }
+}
+
+@media (max-width:700px) and (min-width:500px) {
+    .container {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:9000px) and (min-width:850px) {
+   .container .content .second-menu {
+        display: none;
+    }
+}
+
+@media (max-width:1249px) and (min-width:850px) {
+    label[for="check"] {
+        position: absolute;
+        top: 23px;
+        left: 50%;
+    }
+}
+
+
+@media (max-width: 600px) and (min-width: 300px){
+    .start-giving .cards-container .content{
+        height: auto !important;
+    }    
+.start-giving .cards-container .content .cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        padding: 20px 0;
+        height: auto !important;
+}
+.start-giving{
+    height: auto;
+}
+.cards-container{
+    
+}
+}
+
+@media (max-width: 840px) and (min-width: 300px){
+    .send{
+        height: auto !important;
+    }
+.send .container .content {
+  flex-direction: column;
+  height: auto;
+}
+.send .content .right img{
+        width: 100% !important;
+}
+}
+
+@media (max-width: 730px) and (min-width: 501px){
+
+    .share .share-container .content .bottom-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 42px;
+        row-gap: 42px;
+    }
+}
+
+
+@media (max-width: 500px) and (min-width: 301px){
+
+    .share .share-container .content .bottom-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 42px;
+        row-gap: 42px;
+    }
+}
+
+
+@media (max-width: 970px) and (min-width: 621px){
+    .gifts .gifts-container .content .carousel-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gifts .content{
+        height: auto !important;
+    }
+    
+    .gifts{
+        height: auto !important;
+        padding: 20px 0;
+    }
+    
+}
+
+@media (max-width: 620px) and (min-width: 300px){
+    .gifts .gifts-container .content .carousel-cards {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gifts .content{
+        height: auto !important;
+    }
+    
+    .gifts{
+        height: auto !important;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 620px) and (min-width: 300px){
+    .message .container .content {
+     }
+     .message{
+         height: auto !important;
+     }
+     .message .container{
+         height: auto;
+         padding: 30px 0;
+     }
+.message .container .content .sides{
+   flex-direction: column !important;
+}
+.message .container .content .sides .right{
+    margin-top: 30px;
+ }
+}
